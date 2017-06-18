@@ -1,0 +1,1002 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul,ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+button{
+	border: none;
+	outline: none;
+}
+img{
+	vertical-align: top;
+}
+header{
+	background: #333333;
+	height: 30px;
+	min-width: 1200px;
+}
+#login{
+	width: 1092px;
+	margin: 0 auto;
+	color: #d9d9d9;
+}
+#login p{
+	font: 12px/30px "微软雅黑";
+	float: left;
+	width: 110px;
+	margin-right: 586px;
+}
+#login button{
+	width: 40px;
+	height: 30px;
+	font: 12px/30px "微软雅黑";
+	text-align: center;
+	background: none;
+	color: #d9d9d9;
+	float: left;
+}
+#login ul{
+	float: right;
+	margin-right: 10px;
+}
+#login ul li{
+	float: left;
+	font-size: 0;
+	height: 20px;
+	margin-top: 5px;
+	border-left: 1px solid #6d6d6d;
+}
+#login ul li a{
+	color: #d9d9d9;
+	width: 68px;
+	display: inline-block;
+	text-align: center;
+	font: 12px/20px "微软雅黑";	
+}
+#login ul li span{
+	width: 15px;
+	color: #d9d9d9;
+	font: 12px/12px "微软雅黑";
+	margin-right: 10px;
+}
+#login ul li img{
+	margin:0 5px 0 5px;
+	vertical-align: middle;
+}
+#login button:hover{
+	color: white;
+	cursor: pointer;
+}
+#login ul li a:hover{
+	color: white;
+}
+
+#login ul li .help{
+	width: 78px;
+	border-top: none;
+	background: url(../img/san.png) no-repeat;
+	padding-top: 5px;
+	position: absolute;
+	left:1060px;
+	display: none;
+}
+#login .help p{
+	box-shadow: 0px 0px 2px silver;
+	border: 1px solid silver;
+	width: 78px;
+	border-top: none;
+}
+#login .help p a{
+	width: 60px;
+	height: 30px;
+	display: block;
+	font: 12px/30px "微软雅黑";
+	border-bottom: 1px solid #dadada;
+	margin: 0 auto;
+	color: #999999;
+}
+#login .help p a:hover{
+	color: #b4a078;
+}
+#login .QR_code{
+	width: 140px;
+	height: 164px;
+	position: absolute;
+	left:1100px;
+	top:22px;
+	background:url(../img/san2.png) no-repeat;
+	display: none;
+}
+
+#login .QR_code img{
+	vertical-align: top;
+	padding: 15px 5px 5px 5px;
+}
+#login .QR_code span{
+	color: #b4a078;
+	font: 12px/14px "微软雅黑";
+	padding-left: 5px;
+}
+.clearBox:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/*网易标志*/
+#log{
+	width:1092px;
+	margin: 0 auto;
+}
+#log img{
+	margin-left: 310px;
+	float: left;
+}
+#log .search{
+	float: left;
+	width: 326px;
+	margin-top: 70px;
+}
+#log .search input{
+	border: none;
+	width: 252px;
+	border-bottom: 1px solid #aea886;
+	outline: none;
+}
+#log .search button{
+	background: url(../img/search.jpg);
+	height: 21px;
+	width: 21px;
+}
+#log .search div{
+	display: inline-block;
+	width: 30px;
+	height: 22px;
+	position: relative;
+}
+#log .search div img{
+	margin: 0;
+	position: absolute;
+}
+#log .search div span{
+	width: 18px;
+	height: 18px;
+	background: red;
+	border-radius: 50%;
+	font: 10px/18px "微软雅黑";
+	color: white;
+	display: inline-block;
+	position: absolute;
+	text-align: center;
+	left:15px;
+	top:-8px;
+}
+
+/*导航*/
+#nav{
+	width: 1092px;
+	margin: 0 auto;
+}
+#nav ul{
+	height:68px ;
+	background: white;
+}
+#nav ul li{
+	float: left;
+	width: 90px;
+	height: 44px;
+	padding-top: 24px;
+}
+#nav ul li a{
+	height: 20px;	
+	font:bold 14px/18px "微软雅黑";
+	color: black;
+	margin-left: 30px;
+	padding-bottom: 5px;
+}
+#nav ul li a:hover{
+	border-bottom: 3px solid #aea886;
+	color: #aea886;
+}
+#nav ul li a.active{
+	border-bottom: 3px solid #aea886;
+	color: #aea886;
+}
+#nav ul li span{
+	border-left: 1px solid #aea886;	
+}
+nav{
+	position: relative;
+	left: 0;
+	top: 0;
+}
+nav .navList,#navFix .navList{
+	/*box-shadow: 0 0 5px silver;*/
+	border-bottom: 1px solid silver;
+	width: 1050px;
+	padding: 0 14% 30px 10%;
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 60px;
+	z-index: 10;
+	background: white;
+}
+nav .navList ol,#navFix .navList ol{
+	position: relative;
+	left: 0;
+	top: 0;
+	z-index: 11;
+}
+nav .navList ol li,#navFix .navList ol li{
+	float: left;
+	width: 80px;
+	height: 80px;
+	margin:0 0 10px 60px;
+}
+nav .navList ol li img,#navFix .navList ol li img{
+	vertical-align: middle;
+	padding: 15px 15px 10px 15px;
+}
+nav .navList ol li a,#navFix .navList ol li a{
+	font:bold 14px/16px "微软雅黑";
+	color: black;
+	display: block;
+	text-align: center;
+	width: 78px;
+}
+nav .navList ol li a:hover{
+	color: #aea886;
+}
+
+/*Banner滚动条*/
+#banner{
+	position:relative;
+	min-width: 1200px;
+	overflow: hidden;
+}
+#banner img{
+	margin-left:-250px;
+	transition: 0.5s;
+}
+#banner button,#say .say button{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #d0c3b0;
+	font: 28px/50px "微软雅黑";
+	color:#f7ede1;
+	position: absolute;
+	left:68px;
+	top:200px;
+	cursor: pointer;
+	outline: none;
+}
+#banner button:nth-child(2){
+	left: 1229px;
+}
+#banner div{
+	position: absolute;
+	left: 616px;
+	bottom: 0px;
+}
+#banner div span{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background:#f7ede1 ;
+	border: 1px solid #d0c3b0;
+	margin: 5px;
+	display: inline-block;
+}
+#banner div span.active{
+	background: #a9966e;
+	box-shadow: 0px 0px 2px #e4cea6;
+}
+
+/*固定定位*/
+#fixPic{
+	width:60px;
+	position: fixed;
+	bottom: 60px;
+	right: 20px;
+	z-index: 100;
+}
+#fixPic div{
+	width: 58px;
+	height: 58px;
+	border: 1px solid #dddddd;
+	background: white;
+}
+#fixPic div:hover{
+	cursor: pointer;
+}
+#fixPic div:nth-of-type(2){
+	border-bottom: none;
+	border-top: none;
+}
+#fixPic div img{
+	vertical-align: middle;
+	padding: 10px 15px 5px 15px;
+}
+#fixPic div:nth-of-type(2) img{
+	padding: 10px 20px 5px 20px;
+}
+#fixPic div p{
+	color: grey;
+	font: 12px/14px "微软雅黑";
+	text-align: center;
+}
+#fixPic div.top{
+	display: none;
+	border-top: none;
+}
+
+
+/*被吸附的导航条*/
+#navFix{
+	background: white;
+	box-shadow: 0 0 5px silver;
+	height: 60px;
+	width: 100%;
+	position: fixed;
+	top:0;
+	left: 0;
+	display: none;
+	z-index: 101;
+}
+#navFix .navFix{
+	width: 1092px;
+	margin: 0 auto;
+}
+#navFix .navFix .img{
+	float: left;
+	padding: 13px 0;
+}
+#navFix .navFix ul{
+	float: left;
+	margin:0 103px 0 28px;
+}
+#navFix .navFix ul li{
+	float: left;
+	width: 70px;
+	height: 40px;
+	padding-top: 20px;
+}
+#navFix .navFix ul li a{
+	height: 20px;	
+	font:bold 14px/18px "微软雅黑";
+	color: black;
+	margin-left: 20px;
+	padding-bottom: 5px;
+}
+#navFix .navFix ul li a:hover{
+	border-bottom: 3px solid #aea886;
+	color: #aea886;
+}
+#navFix .navFix button{
+	float: left;
+	width: 48px;
+	background: none;
+	text-align: center;
+	font:12px/12px "微软雅黑";
+	color: #242424;
+	margin-top: 24px;
+	cursor: pointer;
+}
+#navFix .navFix div{
+	float: left;
+	position: relative;
+	margin: 20px 0 0 10px;
+	cursor: pointer;
+}
+#navFix .navFix div img{
+	position: absolute;
+	width: 25px;
+}
+#navFix .navFix div span{
+	width: 18px;
+	height: 18px;
+	background: red;
+	border-radius: 50%;
+	font: 10px/18px "微软雅黑";
+	color: white;
+	display: inline-block;
+	position: absolute;
+	text-align: center;
+	left:15px;
+	top:-8px;
+}
+
+
+
+
+/*品牌制造商*/
+#brand{
+	width: 1092px;
+	margin: 16px auto;
+}
+#brand .title h2,#new .new .title h2,#hot .hot .title h2{
+	float: left;
+	font:bold 28px/60px "微软雅黑";
+}
+#brand .title span,#new .new .title span{
+	float: left;
+	margin-left: 22px;
+	font: 14px/46px "微软雅黑";
+	padding-top: 14px;
+}
+#brand .title .more,#new .new .title .more,#hot .hot .title .more{
+	float: right;
+	font: 14px/46px "微软雅黑";
+	padding-top: 14px;
+	color: black;
+}
+#brand .title .more:hover{
+	color:#aea886 ;
+}
+#brand .content a{
+	float: left;
+	overflow: hidden;
+}
+#brand .content a:nth-of-type(2){
+	margin: 0 10px;
+}
+#brand .content div{
+	float: right;
+	width: 356px;
+}
+#brand .content div a:nth-of-type(2){
+	margin: 10px 0 0 0;
+}
+
+
+/*新品首发*/
+#new .new{
+	width: 1092px;
+	margin: 20px auto;
+	position: relative;
+}
+#new .new .title .more:hover{
+	color:#aea886 ;
+}
+#new .new .content{
+	position: relative;
+	overflow: hidden;
+	height: 313px;
+	width: 1092px;
+}
+#new .new button{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #d0c3b0;
+	font: 28px/50px "微软雅黑";
+	color:#f7ede1;
+	position: absolute;
+	left:-60px;
+	top:180px;
+	cursor: pointer;
+	outline: none;
+	z-index: 20;
+}
+#new .new button:nth-of-type(2){
+	left:1100px;
+}
+#new .new .content .pic{
+	width: 2200px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#new .new .content ul{
+	float: left;
+	width: 1092px;
+}
+#new .new .content li{
+	float: left;
+	width: 266px;
+	margin: 3px;
+}
+#new .new .content li:hover{
+	box-shadow: 0 0 5px silver;
+}
+#new .new .content li p,#hot .hot .content>div p,#hot .hot .content ul p{
+	text-align: center;
+	font: bold 12px/22px "微软雅黑";
+	cursor:pointer;
+}
+#new .new .content li p:hover{
+	color:#aea886;
+}
+#new .new .content li div,#hot .hot .content>div div,#hot .hot .content ul li div{
+	text-align: center;
+}
+#new .new .content li span,#hot .hot .content>div span,#hot .hot .content ul li span{
+	color: red;
+	font: 12px/22px "微软雅黑";
+}
+#new .new .content li strong{
+	font: 12px/22px "微软雅黑";
+	color: gray;
+	border-left:1px solid gray;
+	padding-left: 10px;
+}
+
+
+/*人气推荐*/
+#hot{
+	min-width: 1200px;
+	background: #eae4d5;
+	margin:10px 0;
+}
+#hot .hot{
+	width: 1092px;
+	padding-top: 40px;
+	margin: 0 auto;
+}
+#hot .hot .title button{
+	width: 60px;
+	font: 12px/12px "微软雅黑";
+	float: left;
+	margin: 28px 34px 0 34px;
+	padding-bottom: 5px;
+	background: none;
+	cursor: pointer;
+}
+#hot .hot .title button:hover{
+	border-bottom: 2px solid #aea886;
+	color: #aea886;
+}
+#hot .hot .title button.active{
+	border-bottom: 2px solid #aea886;
+	color: #aea886;
+}
+#hot .hot .content{
+	display: none;
+}
+#hot .hot .content>div{
+	background: white;
+	width: 390px;
+	height:470px ;
+	float: left;
+	text-align: center;
+}
+#hot .hot .content ul{
+	float: left;
+	width: 700px;
+}
+#hot .hot .content ul li{
+	width: 220px;
+	height: 230px;
+	background: white;
+	margin:0 0 10px 10px;
+	float: left;
+	text-align: center;
+}
+#hot .hot p:hover{
+	color: #aea886;
+}
+#hot .hot .title .more:hover{
+	color: #aea886;
+}
+/*小标题加内容*/
+.title h2{
+	float: left;
+	font:bold 28px/60px "微软雅黑";
+}
+.title .more{
+	float: right;
+	font: 14px/46px "微软雅黑";
+	padding-top: 14px;
+	color: black;
+	margin-left: 20px;
+}
+.title .more:hover{
+	color: #aea886;
+}
+.title span{
+	float: left;
+	margin-left: 22px;
+	font: 14px/46px "微软雅黑";
+	padding-top: 14px;
+}
+.title strong{
+	float: right;
+	margin-right: 10px;
+	font: 14px/46px "微软雅黑";
+	padding-top: 14px;
+}
+.title strong:nth-of-type(odd):hover{
+	color: #aea886;
+	cursor: pointer;
+}
+.content ul li p{
+	text-align: center;
+	font: bold 12px/22px "微软雅黑";
+	cursor:pointer;
+}
+.content ul li p:hover{
+	color: #aea886;
+}
+.content ul li div{
+	text-align: center;
+}
+.content ul li div span{
+	color: red;
+	font: 12px/22px "微软雅黑";
+}
+
+
+/*限时购*/
+#shop .shop{
+	margin: 0 auto;
+	width: 1092px;
+}
+#shop .content>div{
+	background: url(../img/xianshi.jpg);
+	width: 225px;
+	height: 380px;
+	text-align: center;
+	color: #615548;
+	float: left;
+	cursor: pointer;
+}
+#shop .content>div p{
+	font: 28px/28px "微软雅黑";
+	padding: 68px 0 40px 0;
+	color: #615548;
+}
+#shop .content>div strong{
+	font: 18px/18px "微软雅黑";
+	color: #615548;
+	display: block;
+}
+#shop .content>div span{
+	width: 40px;
+	height: 40px;
+	font: 16px/40px "微软雅黑";
+	color: white;
+	margin: 20px 0 50px 0;
+	display: inline-block;
+	background: #615548;
+}
+#shop .content>div button{
+	display: inline-block;
+	width: 110px;
+	height: 30px;
+	border-radius: 20px;
+	color: white;
+	background: #a7936e;
+}
+#shop .content ul{
+	width: 867px;
+	float: left;
+}
+#shop .content ul li{
+	width: 432px;
+	height: 186px;
+	border: 1px solid #e7e2d8;
+	float: left;
+	border-left: none;
+}
+#shop .content ul li a{
+	float: left;
+}
+#shop .content ul li div{
+	float: left;
+	width: 252px;
+	font: 12px/12px "微软雅黑";
+	color: #999999;
+}
+#shop .content ul li div h4{
+	font: 16px/36px "微软雅黑";
+	margin-top: 10px;
+	color: black;
+	cursor: pointer;
+}
+#shop .content ul li div p{
+	font: 12px/12px "微软雅黑";
+	color: #999999;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+#shop .content ul li div progress{
+	border: 1px solid #f2cecd;
+	border-radius: 30px;
+	background: white;
+	height: 10px;
+	width: 150px;
+	margin:0 5px 2px 0;
+}
+#shop .content ul li div progress::-webkit-progress-bar { background: transparent; }
+#shop .content ul li div progress::-webkit-progress-value { background: #ffe5e5; }
+#shop .content ul li div span{
+	font: 12px/12px "微软雅黑";
+	color: #999999;
+	padding-bottom: 5px;
+	text-decoration: line-through;
+}
+#shop .content ul li div strong{
+	color: #be4141;
+	display: inline-block;
+	margin-right: 18px;
+}
+#shop .content ul li div strong mark{
+	font:bold 20px/20px "微软雅黑";
+	background: none;
+	color: #be4141;
+}
+#shop .content ul li div button{
+	width: 120px;
+	height: 30px;
+	display: inline-block;
+	color: white;
+	font: 16px/30px "微软雅黑";
+	background: #be4141;
+	margin-top: 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+
+/*居家*/
+#home .home{
+	width: 1092px;
+	margin: 10px auto;
+}
+#home .home ul li{
+	width: 265px;
+	float: left;
+	margin:20px 0 0 10px;
+}
+#home .home ul li a{
+	overflow: hidden;
+	width: 265px;
+	height: 265px;
+	display: block;
+	margin-bottom: 20px;
+}
+#home .home ul li a img{
+	background: rgb(244,244,244);
+	padding: 8px;
+	margin-bottom: 20px;
+}
+
+/*服装*/
+#cloth .cloth{
+	width: 1092px;
+	margin: 10px auto;
+}
+#cloth .cloth ul li{
+	width: 265px;
+	float: left;
+	margin:20px 0 0 10px;
+}
+#cloth .cloth ul li a{
+	overflow: hidden;
+	width: 265px;
+	height: 265px;
+	display: block;
+	margin-bottom: 20px;
+}
+#cloth .cloth ul li a img{
+	background: rgb(244,244,244);
+	padding: 8px;
+}
+
+/*甄选*/
+#zhenx .zhenx{
+	width: 1092px;
+	margin: 10px auto;
+}
+#zhenx .zhenx .content div{
+	float: right;
+	width: 390px;
+}
+#zhenx .zhenx .content div img{
+	margin-bottom: 10px;
+}
+/*大家都在说*/
+#say{
+	background: #eae4d5;
+	margin-top: 50px;
+	padding: 30px 0;
+	min-width: 1200px;
+}
+#say .say{
+	width: 1092px;
+	margin: 0 auto;
+	position: relative;
+}
+#say .say button{
+	left: -60px;
+	top: 180px;
+	z-index: 50;
+}
+#say .say button:nth-of-type(2){
+	left: 1100px;
+}
+#say .say .content{
+	width: 1092px;
+	height: 410px;
+	overflow: hidden;
+	position: relative;
+}
+#say .say .content ul{
+	width: 3025px;
+	height: 410px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#say .say .content ul li{
+	width: 265px;
+	height: 410px;
+	float: left;
+	margin-right: 10px;
+	background: white;
+	position: relative;
+}
+#say .say .content ul li a{
+	width: 265px;
+	height: 265px;
+	display: block;
+	overflow: hidden;
+}
+#say .say .content ul li div{
+	background: white;
+	position: absolute;
+	top: 215px;
+	left: 5px;
+	width: 235px;
+	height: 180px;
+	text-align: left;
+	padding: 10px 10px 0px 10px;
+	box-shadow: 0 0 2px silver;
+}
+#say .say .content ul li div span{
+	font: 12px/22px "微软雅黑";
+	color: silver;
+	width: 300px;
+	display: inline-block;
+}
+#say .say .content ul li div h4{
+	font: 16px/26px "微软雅黑";
+	display: inline-block;
+	width: 190px;
+	height: 26px;
+	margin-top: 5px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+#say .say .content ul li div strong{
+	font: 12px/26px "微软雅黑";
+	height: 26px;
+	color:#aea886;
+	display: inline-block;
+	overflow: hidden;
+}
+#say .say .content ul li div p{
+	font: 12px/18px "微软雅黑";
+	text-align: left;
+}
+#say .say .content ul li div p:hover{
+	color: black;
+	cursor:default;
+}
+
+/*最后底部*/
+#last .last{
+	width: 1092px;
+	margin: 30px auto;
+}
+#last .last ul li{
+	width: 283px;
+	float: left;
+	padding: 0 40px 10px 40px;
+	text-align: center;
+}
+#last .last ul li:nth-child(2){
+	border-left: 1px solid silver;
+	border-right: 1px solid silver;
+}
+#last .last ul li h5{
+	font:16px/16px "微软雅黑";
+	text-align: center;
+}
+#last .last .weixin{
+	position: relative;
+}
+#last .last .weixin img:nth-child(2){
+	position: absolute;
+	left: -30px;
+	top: 30px;
+	display: none;
+}
+#last .last ul li strong{
+	font:24px/30px "微软雅黑";
+	display: block;
+	margin: 30px 0 10px 0;
+	text-align: center;
+}
+#last .last ul li span{
+	font: 12px/14px "微软雅黑";
+}
+#last .last ul li button{
+	font: 14px/18px "微软雅黑";
+	border: 1px solid;
+	border-radius: 5px;
+	background: none;
+	display: inline-block;
+	padding: 3px 15px;
+	margin-top: 10px;
+}
+#last .last ul li button:hover{
+	background: rgb(65,65,65);
+	color: white;
+}
+#last .last ul li p{
+	font: 14px/18px "微软雅黑";
+	margin: 20px 0 10px 0;
+	text-align: left;
+}
+#last .last ul li:nth-child(2) span{
+	font:14px/40px "微软雅黑";
+}
+#last .last ul li:nth-child(3) img{
+	margin: 10px;
+}
+#last .last ul li:nth-child(3) span{
+	font: 12px/16px "微软雅黑";
+	color: #b4a078;
+	display: block;
+}
+
+/*footer*/
+footer{
+	margin-top: 10px;
+	padding-bottom: 10px;
+	background: rgb(65,65,65);
+	overflow: hidden;
+}
+footer #footer{
+	width: 1092px;
+	margin: 0 auto;
+	color: white;
+}
+footer #footer .top{
+	border-bottom: 1px solid rgb(79,79,79);
+}
+footer #footer .top li{
+	padding: 34px 87px;
+	float: left;
+}
+footer #footer .top li span{
+	font: 16px/60px "微软雅黑";
+	margin-left: 10px;
+}
+footer #footer .bottom ul{
+	margin: 10px auto;
+	width: 500px;
+}
+footer #footer .bottom li{
+	padding: 0 10px;
+	border-left: 1px solid rgb(153,153,153);
+	font: 12px/12px "微软雅黑";
+	color: rgb(153,153,153);
+	display: inline-block;
+}
+footer #footer .bottom span{
+	display: block;
+	font: 12px/30px "微软雅黑";
+	color: rgb(153,153,153);
+	text-align: center;
+	height: 30px;
+}

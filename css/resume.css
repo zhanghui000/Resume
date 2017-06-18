@@ -1,0 +1,536 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	outline: none;
+}
+button{
+	outline: none;
+}
+header{
+	background: white;
+}
+/*开始的照片墙*/
+#second{
+	display: none;
+}
+#enter{
+	transition: 0.5s;
+	position: relative;
+	left: 0;
+	top: 0;
+}
+#picsBox{
+	width: 1120px;
+	height: 650px;
+	margin: 0 auto;
+	transform: rotateX(0deg) rotateY(0deg);	
+	transition: 0.5s;
+}
+#picsBox .box{
+	width: 160px;
+	height: 160px;
+	position: relative;
+	float: left;
+	transform-style: preserve-3d;
+	perspective: 800px;	
+	transform: rotateX(0deg) rotateY(0deg);	
+	transition: 0.5s;
+}
+#enter button{
+	position: fixed ;
+	bottom: 20px;
+	left: 630px;
+	background: indianred;
+	border-radius: 5px;
+	padding: 5px 20px;
+	font: 16px/20px "微软雅黑";
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+#picsBox .box div{
+	width: 150px;
+	height: 150px;
+	border: 5px solid wheat;
+	position: absolute;
+}
+#picsBox .box div:nth-child(1){
+	transform: translateZ(80px);
+}
+#picsBox .box div:nth-child(2){
+	transform: translateZ(-80px);
+}
+#picsBox .box div:nth-child(3){
+	transform:rotateY(90deg) translateZ(80px);
+}
+#picsBox .box div:nth-child(4){
+	transform:rotateY(90deg) translateZ(-80px);
+}
+#picsBox .box div:nth-child(5){
+	transform:rotateX(90deg) translateZ(80px);
+}
+#picsBox .box div:nth-child(6){
+	transform:rotateX(90deg) translateZ(-80px);
+}
+			
+			
+#header{
+	width: 1092px;
+	margin: 0 auto;
+}
+#header p{
+	font: 38px/100px "微软雅黑";
+	color: #FFBBFF;
+	float: left;
+	width: 300px;
+}
+#header ul{
+	float: right;
+}
+#header ul li{
+	float: left;
+	width: 100px;
+	margin: 20px 0;
+}
+#header ul li span{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin-left: 30px;
+	display: block;
+}
+#header ul li span.active{
+	background: #FFBBFF;
+}
+#header ul li a{
+	color: #EEEED1;
+	font: 18px/50px "微软雅黑";
+}
+#header ul li a:hover{
+	color: #CDCDB4;
+}
+#header ul li a.active{
+	color: #FFBBFF;
+}
+.clearBox:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/*固定定位*/
+#fix{
+	position: fixed;
+	right: 10px;
+	bottom: 30px;
+	width: 50px;
+	z-index: 10;
+	border: 1px solid silver;
+	background: white;
+	cursor: pointer;
+}
+#fix img{
+	width: 50px;
+}
+#fix span{
+	position: absolute;
+	left: -105px;
+	top: 0;
+	width: 100px;
+	display: inline-block;
+	font: 14px/25px "微软雅黑";
+	background: white;
+	border: 1px solid silver;
+	display: none;
+}
+#fix p{
+	font: 30px/50px "微软雅黑";
+	text-align: center;
+	height: 50px;
+	border-top: 1px solid silver;
+	display: none;
+}
+/*banner图片*/
+#banner{
+	background: #FFF0F5;
+	height: 535px;
+	overflow: hidden;
+}
+#banner #pics{
+	position: relative;
+	height: 500px;
+	overflow: hidden;
+}
+#banner #pics .imgs{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#banner #pics .creatDom{
+	height: 125px;
+	position: absolute;
+	transition: 0.5s;
+}
+#banner #pics .btns{
+	position: absolute;
+	left: 20px;
+	top: 225px;
+	display: none;
+}
+#banner #pics .btns button{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	color: #FAFAD2;
+	font:bold 28px/30px "微软雅黑";
+	background:rgba(245,222,179,0.5);
+	border: none;
+	cursor: pointer;
+}
+#banner #pics .btns button:hover{
+	background:rgba(245,222,179,0.8);
+}
+#banner #pics .btns button:nth-child(2){
+	margin-left: 1200px;
+}
+#banner #pics p{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 80px;
+	width: 100%;
+	display: block;
+	background: rgba(0,0,0,0.3);
+	font: 26px/80px "微软雅黑";
+	padding-left: 20px;
+	color: white;
+}
+#banner .cicle{
+	height: 20px;
+	margin: 5px;
+	position: relative;
+	text-align: center;
+}
+#banner .cicle span{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin-left: 10px;
+	display: inline-block;
+	background: #EED8AE;
+}
+#banner .cicle span.active{
+	background: #FF69B4;
+}
+#banner .cicle span:hover{
+	background: #FF69B4;
+}
+/*教育背景*/
+#educate{
+	background: white;
+	padding: 50px 0;
+}
+#educate .educate{
+	width: 1092px;
+	margin:0 auto;
+}
+#educate .educate ul{
+	margin-top: 10px;
+}
+#educate .educate ul li{
+	width: 350px;
+	height: 550px;
+	text-align: center;
+	float: left;
+	margin-right: 10px;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 0 2px silver;
+}
+#educate .educate ul li:hover{
+	color:#FFBBFF;
+}
+#educate .educate ul li p{
+	position: absolute;
+	left: 0;
+	top: -500px;
+	background: rgba(0,0,0,0.5);
+	font: 18px/24px "微软雅黑";
+	color: white;
+	height: 280px;
+	padding: 220px 10px 0 10px;
+	text-align: left;
+}
+#educate .educate ul li span{
+	font: 18px/50px "微软雅黑";
+}
+
+/*工作经历*/
+#experience{
+	background: rgba(0,0,0,0.2);
+	height: 500px;
+	padding: 30px 0;
+}
+#experience .experience{
+	width: 1092px;
+	margin: 0 auto;
+}
+#experience .experience .fixed{
+	position: fixed;
+	top: 0;
+	left: -100px;
+	z-index: -1;
+}
+#experience .experience div div{
+	color: white;
+}
+#experience .experience div div h4{
+	font: 26px/50px "微软雅黑";
+	padding: 30px 0;
+	text-align: center;
+}
+#experience .experience div div li{
+	font: 20px/50px "微软雅黑";
+	text-align: center;
+}
+#experience .experience div div li:nth-child(1):first-letter{
+	color: #FF83FA;
+}
+#experience .experience div div li:nth-child(2):first-letter{
+	color: #FFA500;
+}
+#experience .experience div div li:nth-child(3):first-letter{
+	color: #FF7256;
+}
+#experience .experience div div li:nth-child(4):first-letter{
+	color: #FFFF00;
+}
+/*个人能力*/
+#ability{
+	background: #FFFACD;
+	padding: 10px 0;
+}
+#ability .ability{
+	width: 1092px;
+	margin: 10px auto;
+	overflow: hidden;
+	background: url(../img/guitar.png) 800px 200px no-repeat;
+}
+#ability .ability h3,#educate .educate h3,#experience .experience h3{
+	font: 30px/40px "微软雅黑";
+}
+#ability .ability .content{
+	color: #8B636C;
+	width: 600px;
+	margin:10px auto;
+}
+#ability .ability .content .left{
+	width: 240px;
+	float: left;
+}
+#ability .ability .content .title{
+	width: 240px;
+	height: 40px;
+}
+#ability .ability .content .title h4{
+	width: 36px;
+	height: 36px;
+	border: 2px solid #8B636C;
+	font: 22px/36px "微软雅黑";
+	text-align: center;
+	float: left;
+}
+#ability .ability .content .title span{
+	width: 200px;
+	height: 20px;
+	border-bottom: 2px solid #8B636C;
+	display: block;
+	float: left;
+}
+#ability .ability .content .text span{
+	width: 20px;
+	height: 70px;
+	display: inline-block;
+	float: left;
+	border-right: 2px solid #8B636C;
+	word-break: break-word;
+	font: 12px/30px "微软雅黑";
+	padding: 5px 0 0 5px;
+}
+#ability .ability .content .text div{
+	float: left;
+	width: 190px;
+	padding: 5px 0 0 8px;
+}
+#ability .ability .content .one{
+	width: 240px;
+	height: 135px;
+	margin-top: 10px;
+	opacity: 0;
+}
+
+/*中间的*/
+#ability .ability .content .middle{
+	width: 100px;
+	float: left;
+	margin-top: 20px;
+	transition: 0.5s;
+	animation: 2s move;
+	display: none;
+}
+#ability .ability .content .middle .two{
+	height: 140px;
+}
+#ability .ability .content .middle .two span:nth-of-type(1){
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background: #8B636C;
+}
+#ability .ability .content .middle .two span{
+	width: 8px;
+	height: 8px;
+	display: block;
+	border-radius: 50%;
+	background: #8B636C;
+	margin: 5px 0;
+}
+#ability .ability .content .middle .two div:nth-child(1) span:nth-of-type(2){
+	margin-left: 20px;
+}
+#ability .ability .content .middle .two div:nth-child(1) span:nth-of-type(3){
+	margin-left: 40px;
+}
+#ability .ability .content .middle .two div:nth-child(1) span:nth-of-type(4){
+	margin-left: 60px;
+}
+#ability .ability .content .middle .two div:nth-child(1) span:nth-of-type(5){
+	margin-left: 80px;
+}
+#ability .ability .content .middle .two div:nth-child(2) span:nth-child(1){
+	margin:5px 0 0 90px;
+}
+#ability .ability .content .middle .two div:nth-child(2) span:nth-of-type(2){
+	margin-left: 80px;
+}
+#ability .ability .content .middle .two div:nth-child(2) span:nth-of-type(3){
+	margin-left: 60px;
+}
+#ability .ability .content .middle .two div:nth-child(2) span:nth-of-type(4){
+	margin-left: 40px;
+}
+#ability .ability .content .middle .two div:nth-child(2) span:nth-of-type(5){
+	margin-left: 20px;
+}
+#ability .ability .content .middle .two span.active{
+	background: #FF69B4;
+	box-shadow: 0 0 20px #FF69B4;
+}
+
+#ability .ability .content p{
+	padding: 0 0 5px 0;
+	height: 63px;
+	display: table-cell;
+	vertical-align: middle;
+	font:14px/16px "微软雅黑";
+}
+#ability .ability .content .right{
+	float: left;
+	width: 240px;
+}
+#ability .ability .content .right .three{
+	width: 240px;
+	height:135px ;
+	margin-top: 10px;
+	opacity: 0;
+}
+#ability .ability .content .right .text span{
+	float: right;
+	border-right: none;
+	border-left: 2px solid #8B636C;
+}
+#ability .ability .content .right .text div{
+	float: right;
+	text-align: right;
+	margin-right: 10px;
+}
+@keyframes move{
+	0%{
+		transform: rotateY(80deg);
+	}
+	10%{
+		transform: rotateY(10deg);
+	}
+	20%{
+		transform: rotateY(60deg);
+	}
+	40%{
+		transform: rotateY(20deg);
+	}
+	50%{
+		transform: rotateY(50deg);
+	}
+	60%{
+		transform: rotateY(30deg);
+	}
+	70%{
+		transform: rotateY(40deg);
+	}
+	80%{
+		transform: rotateY(20deg);
+	}
+	90%{
+		transform: rotateY(10deg);
+	}
+}
+
+/*我的作品*/
+#works{
+	background: #FFFACD;
+	padding: 50px 0;
+	height: 700px;
+	overflow: hidden;
+}
+#works .works{
+	width: 1092px;
+	margin: 10px auto;
+}
+#works .works .box img{
+	vertical-align: top;
+	box-shadow: 0 0 10px #D8BFD8;
+}
+#works .works .box{
+	position: relative;
+	width: 130px;
+	height: 200px;
+	margin: 100px auto;
+	transform-style: preserve-3d;
+	transform: perspective(1000px) rotateX(-10deg);
+}
+#works .works .box>div{
+	position: absolute;
+	width: 130px;
+	height: 410px;
+	transition: 1s;
+}
+#works .works .box>div div{
+	/*url与渐变之间有逗号*/
+/*background:linear-gradient(rgb(0,0,0) 50%,rgba(255,255,255,0)),url(img/10.jpg);*/
+	width: 130px;
+	height: 200px;
+	margin-top: 10px;
+	transform: rotateX(180deg);
+	opacity: 0.5;
+}
+#works .works .box span{
+	padding-left: 50px;
+	font: 10px/12px "微软雅黑";
+	color: red;
+	position: relative;
+}
